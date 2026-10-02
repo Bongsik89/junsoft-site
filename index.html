@@ -281,54 +281,35 @@
     }
 
     .project-visual {
-      min-height: 290px;
+      min-height: 320px;
       border-radius: 24px;
-      background:
-        radial-gradient(circle at 70% 25%, rgba(255,255,255,.32), transparent 30%),
-        linear-gradient(145deg, #155eef, #4f46e5 58%, #7c3aed);
-      display: flex;
+      background: #090909;
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 18px;
       align-items: center;
-      justify-content: center;
-      padding: 24px;
+      padding: 22px;
       overflow: hidden;
       position: relative;
-      color: white;
     }
 
-    .phone {
-      width: min(210px, 72%);
-      aspect-ratio: 10 / 19;
-      border: 8px solid rgba(255,255,255,.88);
-      border-radius: 34px;
-      background: linear-gradient(180deg, #ffffff, #eef4ff);
-      box-shadow: 0 30px 60px rgba(0,0,0,.25);
-      padding: 18px;
-      color: #111827;
-      transform: rotate(4deg);
+    .project-visual img {
+      display: block;
+      max-width: 100%;
+      margin: 0 auto;
+      box-shadow: 0 24px 55px rgba(0,0,0,.42);
     }
 
-    .phone .mini-title {
-      font-weight: 900;
-      font-size: 18px;
-      margin-top: 8px;
+    .app-icon-img {
+      width: 180px;
+      border-radius: 28%;
     }
 
-    .balls {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 8px;
-      margin-top: 22px;
-    }
-
-    .ball {
-      aspect-ratio: 1;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      font-weight: 900;
-      font-size: 14px;
-      background: #f4f6f8;
-      border: 1px solid #e4e7ec;
+    .splash-img {
+      width: 230px;
+      max-height: 360px;
+      object-fit: cover;
+      border-radius: 20px;
     }
 
     .cta {
@@ -483,21 +464,9 @@
             </div>
           </div>
 
-          <div class="project-visual" aria-label="럭키넘버원 로또 앱을 상징하는 그래픽">
-            <div class="phone">
-              <div style="font-size:12px;color:#667085;font-weight:700;">LUCKY NUMBER ONE</div>
-              <div class="mini-title">오늘의 번호</div>
-              <div class="balls">
-                <div class="ball">3</div>
-                <div class="ball">11</div>
-                <div class="ball">18</div>
-                <div class="ball">27</div>
-                <div class="ball">34</div>
-                <div class="ball">42</div>
-              </div>
-              <div style="margin-top:22px;height:10px;border-radius:99px;background:#dbeafe;"></div>
-              <div style="margin-top:9px;height:10px;width:72%;border-radius:99px;background:#e5e7eb;"></div>
-            </div>
+          <div class="project-visual" aria-label="럭키넘버원 로또 실제 앱 브랜딩 이미지">
+            <img class="app-icon-img" src="assets/luckynumberone-icon.png" alt="럭키넘버원 로또 앱 아이콘">
+            <img class="splash-img" src="assets/luckynumberone-splash.png" alt="럭키넘버원 로또 앱 시작 화면">
           </div>
         </article>
       </div>
