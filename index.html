@@ -3,8 +3,44 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Jun Soft는 모바일 앱, 데스크톱 소프트웨어와 AI 자동화 도구를 개발하는 소프트웨어 개발 사업자입니다.">
-  <title>준 소프트 | Jun Soft</title>
+  <meta name="description" content="준 소프트(Jun Soft)는 홈페이지 제작, Android·iOS 앱 제작, 데스크톱 소프트웨어 및 AI 자동화 도구를 기획·개발하는 소프트웨어 개발 스튜디오입니다.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://www.junsoftdev.kr/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="Jun Soft">
+  <meta property="og:title" content="준 소프트 | 홈페이지·앱·소프트웨어·AI 자동화 제작">
+  <meta property="og:description" content="홈페이지, 모바일 앱, 데스크톱 소프트웨어, AI 자동화 도구를 기획부터 개발·배포까지 제작합니다.">
+  <meta property="og:url" content="https://www.junsoftdev.kr/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="준 소프트 | 홈페이지·앱·소프트웨어·AI 자동화 제작">
+  <meta name="twitter:description" content="홈페이지, 모바일 앱, 데스크톱 소프트웨어, AI 자동화 도구를 제작하는 개발 스튜디오 Jun Soft입니다.">
+  <title>준 소프트 | 홈페이지·앱·소프트웨어·AI 자동화 제작</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Jun Soft",
+    "alternateName": "준 소프트",
+    "url": "https://www.junsoftdev.kr/",
+    "email": "mailto:jaejun@junsoftdev.kr",
+    "description": "홈페이지 제작, Android·iOS 앱 제작, 데스크톱 소프트웨어 및 AI 자동화 도구를 기획·개발하는 소프트웨어 개발 스튜디오",
+    "areaServed": "KR",
+    "knowsAbout": [
+      "홈페이지 제작",
+      "앱 제작",
+      "Flutter",
+      "Spring Boot",
+      "데스크톱 소프트웨어 개발",
+      "AI 자동화"
+    ],
+    "sameAs": [
+      "https://play.google.com/store/apps/details?id=com.junsoft.luckynumberone",
+      "https://apps.apple.com/kr/app/id6766396843",
+      "https://m.onestore.co.kr/v2/ko-kr/app/0001006625"
+    ]
+  }
+  </script>
   <style>
     :root {
       --bg: #f7f8fb;
@@ -189,9 +225,9 @@
       margin: 12px 0 0;
     }
 
-    .grid-3 {
+    .grid-4 {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 18px;
     }
 
@@ -410,10 +446,14 @@
       flex-wrap: wrap;
     }
 
+    @media (max-width: 1050px) and (min-width: 821px) {
+      .grid-4 { grid-template-columns: repeat(2, 1fr); }
+    }
+
     @media (max-width: 820px) {
       nav { display: none; }
       .hero { padding-top: 78px; }
-      .grid-3, .project { grid-template-columns: 1fr; }
+      .grid-4, .project { grid-template-columns: 1fr; }
       .project-visual { min-height: 250px; }
       .cta { align-items: flex-start; flex-direction: column; }
     }
@@ -428,8 +468,8 @@
       </a>
       <nav aria-label="주요 메뉴">
         <a href="#about">About</a>
-        <a href="#work">What we build</a>
-        <a href="#projects">Projects</a>
+        <a href="#work">Services</a>
+        <a href="#projects">Portfolio</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -440,17 +480,17 @@
       <div class="wrap">
         <div class="eyebrow">Software Development Studio · Korea</div>
         <h1>
-          작은 아이디어를<br>
-          <span class="gradient-text">실제로 쓰이는 소프트웨어로.</span>
+          홈페이지부터 앱까지,<br>
+          <span class="gradient-text">아이디어를 실제 서비스로.</span>
         </h1>
         <p>
-          Jun Soft는 모바일 애플리케이션, 데스크톱 소프트웨어,
-          AI 기반 자동화 도구를 직접 기획하고 개발합니다.
-          단순한 아이디어에서 시작해 실제 제품과 서비스로 완성하는 것을 지향합니다.
+          Jun Soft는 홈페이지 제작, Android·iOS 앱 제작, 데스크톱 소프트웨어,
+          AI 기반 자동화 도구를 기획하고 개발하는 소프트웨어 개발 스튜디오입니다.
+          프로젝트 성격에 맞춰 기획부터 개발, 배포까지 함께 만듭니다.
         </p>
         <div class="hero-actions">
-          <a class="btn primary" href="#projects">프로젝트 보기</a>
-          <a class="btn" href="mailto:jaejun@junsoftdev.kr">Contact Jun Soft</a>
+          <a class="btn primary" href="#work">제작 서비스 보기</a>
+          <a class="btn" href="#projects">출시 포트폴리오 보기</a>
         </div>
       </div>
     </section>
@@ -461,8 +501,9 @@
           <span>About</span>
           <h2>준 소프트 (Jun Soft)</h2>
           <p>
-            모바일 앱과 소프트웨어를 개발하고 공급하는 소프트웨어 개발 사업자입니다.
-            사용자가 실제로 활용할 수 있는 제품을 작게 시작해 빠르게 개선해 나갑니다.
+            준 소프트는 자체 소프트웨어를 직접 기획·개발하는 동시에,
+            홈페이지·모바일 앱·데스크톱 프로그램·AI 자동화 도구의 맞춤 제작도 진행합니다.
+            실제 출시 경험을 바탕으로 아이디어를 동작하는 제품으로 구현합니다.
           </p>
         </div>
       </div>
@@ -471,24 +512,30 @@
     <section id="work">
       <div class="wrap">
         <div class="section-title">
-          <span>What we build</span>
-          <h2>기획부터 개발, 배포까지</h2>
+          <span>Services</span>
+          <h2>앱·홈페이지·소프트웨어 맞춤 제작</h2>
+          <p>아이디어 정리부터 개발, 테스트, 배포까지 실제 운영을 고려해 제작합니다.</p>
         </div>
-        <div class="grid-3">
+        <div class="grid-4">
+          <article class="card">
+            <div class="icon">W</div>
+            <h3>Homepage & Web</h3>
+            <p>회사 홈페이지, 서비스 소개 페이지 등 목적에 맞는 반응형 웹사이트를 제작합니다.</p>
+          </article>
           <article class="card">
             <div class="icon">M</div>
             <h3>Mobile Apps</h3>
-            <p>Android와 iOS 환경을 고려한 실용적인 모바일 애플리케이션을 개발합니다.</p>
+            <p>Flutter를 기반으로 Android·iOS 모바일 앱을 기획하고 제작합니다.</p>
           </article>
           <article class="card">
             <div class="icon">D</div>
             <h3>Desktop Software</h3>
-            <p>업무 흐름을 단순하게 만들고 반복 작업을 줄이는 데스크톱 도구를 만듭니다.</p>
+            <p>업무 흐름과 반복 작업에 맞춘 Windows 데스크톱 소프트웨어와 도구를 개발합니다.</p>
           </article>
           <article class="card">
             <div class="icon">AI</div>
             <h3>AI & Automation</h3>
-            <p>AI를 실제 작업 과정에 연결해 제작, 검수, 반복 업무를 자동화하는 도구를 개발합니다.</p>
+            <p>AI를 제작·검수·반복 업무에 연결하는 맞춤형 자동화 프로그램과 워크플로를 만듭니다.</p>
           </article>
         </div>
       </div>
@@ -497,9 +544,9 @@
     <section id="projects">
       <div class="wrap">
         <div class="section-title">
-          <span>Selected project</span>
-          <h2>직접 만든 소프트웨어</h2>
-          <p>Jun Soft가 직접 기획하고 개발한 프로젝트를 소개합니다.</p>
+          <span>Portfolio</span>
+          <h2>실제 출시 포트폴리오</h2>
+          <p>Jun Soft가 직접 기획·개발하고 실제 스토어에 출시한 소프트웨어를 소개합니다.</p>
         </div>
 
         <article class="project">
@@ -508,7 +555,8 @@
             <h3>럭키넘버원 로또</h3>
             <p>
               로또 번호 생성과 사용자 편의 기능을 중심으로 만든 모바일 애플리케이션입니다.
-              모바일 앱부터 백엔드까지 직접 설계·개발하며 실제 서비스 형태로 완성했습니다.
+              Flutter 모바일 앱과 Spring Boot 백엔드를 직접 설계·개발하고,
+              Google Play·App Store·ONE store에 실제 서비스로 출시했습니다.
             </p>
             <div class="chips" aria-label="기술 및 플랫폼">
               <span class="chip">Flutter</span>
@@ -546,8 +594,8 @@
       <div class="wrap">
         <div class="cta">
           <div>
-            <h2>Software ideas, built into products.</h2>
-            <p>Jun Soft · Software Development · Republic of Korea</p>
+            <h2>앱·홈페이지·소프트웨어 제작 문의</h2>
+            <p>아이디어와 필요한 기능을 알려주시면 프로젝트에 맞는 개발 방향을 함께 검토합니다.</p>
           </div>
           <a class="btn" href="mailto:jaejun@junsoftdev.kr">jaejun@junsoftdev.kr</a>
         </div>
